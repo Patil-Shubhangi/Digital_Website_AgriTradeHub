@@ -1,0 +1,53 @@
+.location2 .box {
+    position: relative;
+    border-radius: 5px;
+}
+
+.location2 img {
+    border-radius: 5px;
+}
+
+.location2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    color: #fff;
+    z-index: 222;
+}
+
+.location2 .overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 210px;
+    background: rgba(20, 31, 48, 0.3);
+    z-index: -1;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.location2 h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.location2 label {
+    color: #fff;
+    margin-right: 20px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+    .location2 .overlay::after {
+        width: 280px;
+        height: 170px;
+    }
+}

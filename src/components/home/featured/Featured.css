@@ -1,0 +1,39 @@
+/* Box style for the featured item */
+
+.featured .box {
+    box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+    border-radius: 6px;
+    text-align: center;
+    padding: 40px;
+    cursor: pointer;
+    background-color: rgb(100, 212, 151);
+    transition: box-shadow 0.3s ease;
+    /* Add transition for box-shadow */
+}
+
+.featured .box:hover {
+    box-shadow: 0 0 30px 0 rgb(112 121 138 / 30%);
+    /* Increase box-shadow on hover */
+}
+
+
+/* Style for the image */
+
+.featured img {
+    width: 80px;
+    height: 75px;
+    margin-left: 5%;
+    border-radius: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* Add transition for transform and filter */
+}
+
+
+/* Zoom effect on hover */
+
+.featured img:hover {
+    transform: scale(1.2);
+    /* Increase scale on hover */
+    filter: brightness(90%);
+    /* Slightly reduce brightness on hover */
+}
